@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pages.apps.PagesConfig',
     'blog.apps.BlogConfig', 
-    'blogicum.apps.BlogicumConfig'
 ]
 
 MIDDLEWARE = [
