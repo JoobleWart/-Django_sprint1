@@ -50,6 +50,8 @@ def index(request):
 
 def post_detail(request, id):
     post = next((post for post in posts if post['id'] == id), None)
+    if post is None:
+        return HttpResponseNotFound('<h1>404 Page not found</h1>')
     return render(request, 'blog/detail.html', {'post': post})
 
 
